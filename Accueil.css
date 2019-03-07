@@ -1,0 +1,282 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Oswald', sans-serif; 
+    
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    
+    background-size: cover;
+    font-family: 'Oswald', sans-serif; 
+}
+    
+
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+
+.navigation ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 30px;
+
+}
+
+.navigation ul li a{
+    color: white;
+    padding: 33px;
+    display: flex;
+    font-size: 20px;
+    
+}
+
+
+.navigation ul li:hover a{
+    color: darkgrey;
+}
+
+
+/* bouton*/
+
+@media screen and (max-width: 1200px){.nav{
+    
+    text-align: right;
+}
+    
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }    
+    
+    
+
+label{
+    position: absolute;
+    padding-top: 50px;
+    display: flex;
+    color: white;
+    line-height: 70px;
+    cursor: pointer; 
+    z-index: 100;
+    right: 50px;
+    
+    
+}
+
+
+#toggle {
+    
+    display: none;
+  
+    
+}
+
+/* fond*/
+
+.navigation{
+    
+    display: block;
+    top:0;
+    position: fixed;
+    right:0;
+    background-color:black;
+    width: 20%;
+    height: 100%;
+    transition: all .8s;
+    overflow: hidden;
+    width: 0;
+}
+
+
+.navigation ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+.navigation ul li{
+    list-style:none;
+    
+
+}
+
+.navigation ul li a{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size:30px;
+    letter-spacing: 0.30em;
+    white-space: nowrap;
+    list-style:none;
+    
+}
+
+.navigation ul li:hover a{
+    color: darkgrey;
+}
+
+#toggle:checked + .navigation{
+
+    width: 100%;
+    z-index: 99
+}
+
+
+.nav > label:nth-child(1){
+    z-index: 500;
+}
+ }
+
+
+p{
+    padding: 70px;
+    padding-top: 250px;
+    font-size: 55px;
+    letter-spacing: 0.5em;
+    text-align: left;
+    width:60%;
+    max-width: 100%;
+    color: #FFF;
+    line-height: 80px;
+    height: 60%;
+    
+}
+
+
+@media screen and (max-width: 1200px){p
+    {
+        font-size: 40px;
+        padding-top: 270px;
+	}
+    
+   
+    body{
+        background-color: black;
+        height: 100vh;
+    }   
+    
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  display: none
+}
+    
+    
+    
+}
+
+
+
+
+
+
+.LOGO{
+    top:0px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:60px;
+    display:flex;
+    align-items: flex-start;
+    z-index: 100;
+    padding:5px;
+    margin-right: 0px;
+}
+
+
+  
+.f1{
+    padding: 0px;
+    margin-left: 20px;
+    color: white;
+    font-size: 15px;
+    margin-right: 15px;
+    text-align: center;
+    }
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+.contact a{
+    color:white;
+}
+
+
+.contact{
+    margin-top: 120px;
+    padding: 60px 0 60px 65px;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1em;
+    font-size: 25px;
+}
+
+.contact :hover{
+    color: deeppink;
+}
