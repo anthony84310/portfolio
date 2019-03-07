@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Oswald', sans-serif; 
+    
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.header{
+   
+   width: 100%;
+   height: 150px;
+   position: fixed;
+   background-color: black;
+   z-index: 1000;
+   
+}
+
+.logo{
+    position: absolute;
+    padding: 33px;
+}
+
+
+
+.MENU .header h1{
+    padding-top: 50px;
+    padding-left: 230px;
+    position: fixed;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.5em;
+    font-family: 'Oswald', sans-serif;
+   
+    
+}
+
+.MENU .header h1:hover{
+    color: darkgrey;
+}
+
+
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+
+.navigation ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 30px;
+
+}
+
+.navigation ul li a{
+    color: white;
+    padding: 30px;
+    display: flex;
+    font-size: 20px;
+    
+}
+
+
+.navigation ul li:hover a{
+    color: darkgrey;
+}
+
+
+.grid{
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}   
+
+/* bouton*/
+
+@media screen and (max-width: 1200px){.nav{
+    
+    text-align: right
+}
+
+    
+    
+.MENU .header h1{
+  
+    font-size: 40px;
+    letter-spacing: 0.2em;
+      
+    
+ }      
+    
+    
+label{
+    position: relative;
+    float: right;
+    padding: 30px;
+    display: block;
+    margin: 0 20px 0 0;
+    font-size: 50px;
+    color: white;
+    line-height: 70px;
+    cursor: pointer; 
+    z-index: 100;
+}
+
+
+#toggle {
+    
+    display: none;
+  
+    
+}
+
+/* fond*/
+
+.navigation{
+    
+    display: block;
+    top:0;
+    position: fixed;
+    right:0;
+    background-color:black;
+    width: 100%;
+    height: 100%;
+    transition: all .8s;
+    overflow: hidden;
+    width: 0;
+}
+
+
+.navigation ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+.navigation ul li{
+    list-style:none;
+    
+
+}
+
+.navigation ul li a{
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size:30px;
+    letter-spacing: 0.30em;
+    white-space: nowrap;
+    list-style:none;
+    
+}
+
+.navigation ul li:hover a{
+    color: darkgrey;
+}
+
+#toggle:checked + .navigation{
+
+    width: 100%;
+    z-index: 99
+}
+
+
+.nav > label:nth-child(1){
+    z-index: 500;
+}
+ }
+
+@media screen and (max-width: 1200px){.grid{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;   
+	}
+}
+    
+
+ .container1 {
+  position: relative;
+  width: 100%;
+  grid-column: span 3;
+}
+
+
+ .container4 {
+  position: relative;
+  width: 100%;
+  grid-column: span 6;
+}
+
+
+
+.boxtitre {
+  width: 100%;
+  height: 110px;
+  grid-column: span 12;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.boxtitre2 {
+  width: 100%;
+  height: 110px;
+  grid-column: span 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+h4{
+    color:black;
+    font-size:30px;
+    padding-left: 50px;
+    letter-spacing: 0.5em;
+    justify-content: center;
+} 
+
+
+height: 4px;                                                                                        {
+    color:white;
+    font-size:30px;
+    padding-left: 50px;
+    letter-spacing: 0.5em;
+}
+   
+h2{
+    color:white;
+    font-size:30px;
+    padding-left: 50px;
+    letter-spacing: 0.2em;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container1:hover .overlay {
+  opacity: 0.7;
+}
+
+.container5:hover .overlay {
+  opacity: 0.7;
+}
+
+.grandcontainer:hover .overlay {
+  opacity: 0.7;
+}
+
+.overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}   
+
+ .container5 {
+  position: relative;
+  width: 100%;
+  grid-column: span 6;
+  
+}
+
+h3{
+    text-align: center;
+}
+
+.grandcontainer{
+    position: relative;
+    width: 100%;
+    grid-column: span 12;
+    cursor: pointer;
+}
+
+.fond{
+    background-color:#1aa683;
+}
+
+
+
